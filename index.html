@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Herolo</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/general-info.css" />
+    <link rel="stylesheet" href="./styles/input.css" />
+    <link rel="stylesheet" href="./styles/error-message.css" />
+    <link rel="stylesheet" href="./styles/autocompletes.css" />
+    <link rel="stylesheet" href="./styles/currentDayWeather.css" />
+    <link rel="stylesheet" href="./styles/forecast.css" />
+
+
+    <nav style="text-align: center;">
+      <span>
+        <a href="index.html" class="header-link link-on-weather">weather</a>
+      </span>
+      &emsp;
+      <span>
+        <a href="favorites.html" class="header-link">favorites</a>
+      </span>
+    </nav>
+  </head>
+
+  <body>
+    <div class="general-info">
+      <div class="general-info-wrapper">
+        <h1>Weather App</h1>
+        <p>Find weather in a certain city</p>
+        <button id="change-pallet-btn">Show Dark Screen</button>
+      </div>
+    </div>
+
+    <div class="general-info">
+      <div style="text-align: center; background-color: #CAEDD9;">
+        <input
+          id="user-input-elem"
+          type="text"
+          name="city"
+          placeholder="Insert City"
+          autocomplete="off"
+        />
+        <br>
+
+        <span id="error-elem"></span>
+      </div>
+    </div>
+
+
+    <div class="general-info">
+      <div style="text-align: center;">
+        <div id="autocompletes-wrapper"></div>
+      </div>
+    </div>
+
+    <div class="general-info">
+      <div id="chosen-city-wrapper">
+        <p id="chosen-city-name">Tel Aviv</p>
+        <button id="favorites-btn">Add to favorites</button>
+      </div>
+    </div>
+
+    <div id="current-day-weather-info" >
+      <div id="current-day-weather-wrapper"></div>
+    </div>
+
+  
+    <div id="forecast-info"> </div>
+     
+   
+    <script src="app.js" type="module"></script>
+    
+  </body>
+</html>

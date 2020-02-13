@@ -1,0 +1,57 @@
+#current-day-weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#current-day-weather-wrapper {
+    background-color: #6dc9cf;
+    text-align: center;
+    border-radius: 8px;
+    border: 7px solid #24EBBB;
+    padding: 10px 40px 0px 40px;
+    margin-bottom: 40px;
+}
+
+.week-day {
+    color: #06315C;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.weather-date {
+    color: #164A8F;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.weather-degree {
+    color: #780D31;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.degree-btn {
+    border-radius: 10px;
+    border: 3px solid #40707A;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    top: -10px;
+    padding: 4px 10px;
+    background-color: #0C345C;
+    color: #FAF1E0;
+}
+.degree-btn:hover {
+    background-color: #00598F;
+    color: #FFD299;
+}
+
+.weather-description {
+    color: #005157;
+    font-size: 1.5rem;
+    font-weight: 600;
+}

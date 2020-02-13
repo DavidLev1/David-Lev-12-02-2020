@@ -1,0 +1,87 @@
+#favorites-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.favorites-msg {
+    color: #FFEB1B;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.favorite-city-wrapper {
+    font-size: 1rem;
+    border: 7px solid #0E6388;
+    padding: 0px 20px 20px;
+    border-radius: 8px;
+    background: #BFD7CA; 
+    margin: 20px;
+}
+
+.city-name-elem {
+    color: #6E2E2D;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.weather-date-elem {
+    color: #235766;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.weather-degree-elem {
+    color: #FF5500;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+
+.weather-description-elem {
+    color: #00959A;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.show-weather-btn {
+    color:#14396a;
+	background-color:#63b8ee;
+	border-radius: 8px;
+    border: 2px solid #3866a3;
+    cursor: pointer;
+	font-family: Arial;
+	font-size: 1rem;
+	font-weight: bold;
+    padding: 6px 10px;
+}
+.show-weather-btn:hover {
+    background-color:#14396a;
+    color:#63b8ee;
+}
+
+#remove-favorites-btn {
+    color:#14396a;
+	background-color: #FFCEC9;
+	border-radius: 8px;
+    border: 4px solid #0FDBB0;
+    cursor: pointer;
+	font-size: 1rem;
+	font-weight: bold;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+}
+#remove-favorites-btn:hover {
+    background-color:#14396a;
+    color:#63b8ee;
+}
+
+
+.favorite-week-day {
+    color: #06315C;
+    font-size: 2rem;
+    font-weight: 900;
+}

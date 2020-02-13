@@ -1,0 +1,33 @@
+#forecast-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+#five-days-forecast-wrapper {
+    color: black;
+}
+
+.daily-forecast-container {
+    border: solid 2px green; 
+    margin: 20px;
+}
+
+.daily-forecast-info {
+    font-size: 1rem;
+    color: #FFD300;
+    border: 5px solid #6F2F54;
+    padding: 10px 12px 0px 12px;
+    border-radius: 8px;
+    background: #2A3D52;
+}
+
+.week-day-forecast {
+    color: #41A35E;
+    font-size: 1.7rem;
+    font-weight: 900;
+}

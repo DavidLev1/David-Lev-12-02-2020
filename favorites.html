@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorites</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/general-info.css" />
+    <link rel="stylesheet" href="./styles/favorites.css" />
+
+    <nav style="text-align: center;">
+      <span>
+        <a href="index.html" class="header-link">weather</a>
+      </span>
+      &emsp;
+      <span>
+        <a href="favorites.html" class="header-link link-on-favorites">favorites</a>
+      </span>
+    </nav>
+  </head>
+
+  <body>
+    <div class= "general-info">
+      <div class="general-info-wrapper favorites-general-info-wrapper">
+        <button 
+          id="change-pallet-btn"
+        >
+          Show Dark Screen
+        </button>
+        
+        <h2>Favorite Cities</h2>
+        
+        <button 
+          id="remove-favorites-btn"
+        >
+          Remove Favorite Cities
+        </button>
+      </div>
+    </div>
+
+
+    <div id="favorites-wrapper"> </div>
+
+
+    <script src="favorites.js" type="module"></script>
+  </body>
+</html>

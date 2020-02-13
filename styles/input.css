@@ -1,0 +1,14 @@
+input[type="text"] {
+    background-color: transparent;
+    border: 0;
+    border-radius: 3px;
+    border-bottom: solid 5px #113a65;
+    padding-bottom: 4px;
+    text-align: center;
+    color: #003580;
+    background-color: #D6E6FE;
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+    width: 95%;
+}

@@ -1,0 +1,55 @@
+body {
+    font-family: serif;
+    background: linear-gradient(90deg, #2F8AA9 0%, #8ABECC 100%);
+}
+
+.header-link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.link-on-weather {
+    color: #FFF303;
+}
+
+.link-on-favorites {
+    color: #68FF00;
+}
+
+
+#chosen-city-wrapper {
+    text-align: center;
+    margin-bottom: 40px;
+    background: linear-gradient(90deg, #0E315E 0%, #1853A1 100%);
+    border-radius: 5px;
+    padding: 3px 30px;
+}
+
+#chosen-city-name {
+    color: #FFD299;
+    font-weight: bolder;
+    font-family: 'david';  
+    font-size: 2.5rem;
+    max-width: 300px; 
+}
+
+
+#favorites-btn {
+    border-radius: 10px;
+    border: 5px solid #C26F07;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    top: -30px;
+    max-width: 300px;
+    padding: 4px 10px;
+    background-color: #FFD299;
+    color: #00598F;
+}
+
+#favorites-btn:hover {
+    background-color: #00598F;
+    color: #FFD299;
+}
