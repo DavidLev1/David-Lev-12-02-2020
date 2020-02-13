@@ -197,11 +197,11 @@ const set5DaysForecast = cityKey => {
 
 const init = () => {
   const urlParams = new URLSearchParams(window.location.search);
-if(urlParams.get('cityKey') && urlParams.get('cityName')){
-  setWeatherData(urlParams.get('cityKey'), urlParams.get('cityName'));
-} else {
-  setWeatherData('215854', 'Tel Aviv');
-}
+  if(urlParams.get('cityKey') && urlParams.get('cityName')){
+    setWeatherData(urlParams.get('cityKey'), urlParams.get('cityName'));
+  } else {
+    setWeatherData('215854', 'Tel Aviv');
+  }
 }
 
 init();
