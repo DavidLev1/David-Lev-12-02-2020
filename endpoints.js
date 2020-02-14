@@ -29,7 +29,7 @@ export const get5DaysForecast = async someCityKey => {
 };
 
 const LOCATION_AUTO_COMPLETE_ROOT_URL =
-  "http://dataservice.accuweather.com/locations/v1/cities/autocomplete";
+  "https://dataservice.accuweather.com/locations/v1/cities/autocomplete";
 const LOCATION_AUTO_COMPLETE_PARAMS_URL = `?apikey=${API_KEY}&language=en-us`;
 const getCityAutocompleteUrl = inputVal =>
   LOCATION_AUTO_COMPLETE_ROOT_URL +
