@@ -23,3 +23,21 @@ export const getDayOfTheWeek = rawDateTime => {
 
   return dayOfTheWeek;
 }
+
+
+let timeout;
+
+export const showNotice = text => {
+  const noticeElem = document.getElementById("notice");
+
+  let removeText = () => {
+    timeout = setTimeout( () => {
+      noticeElem.innerText = "";
+    }, 5000)
+  } 
+
+  if(timeout !== undefined) clearTimeout(timeout);
+  noticeElem.innerText = text;
+  removeText();
+}
+

@@ -20,7 +20,6 @@ body {
 
 #chosen-city-wrapper {
     text-align: center;
-    margin-bottom: 40px;
     background: linear-gradient(90deg, #0E315E 0%, #1853A1 100%);
     border-radius: 5px;
     padding: 3px 30px;
@@ -32,6 +31,7 @@ body {
     font-family: 'david';  
     font-size: 2.5rem;
     max-width: 300px; 
+    text-align: center;
 }
 
 
@@ -52,4 +52,13 @@ body {
 #favorites-btn:hover {
     background-color: #00598F;
     color: #FFD299;
+}
+
+
+
+#notice {
+    text-align:center;
+    color: #FFF20B;
+    font-size: 2rem;
+    font-weight: 700;
 }

@@ -1,6 +1,6 @@
 const API_KEY = "ZAjUotmYve0heefQOk2nrMiNSdQRtvVB";
 
-// Weather info of specific location
+// Weather info in specific location
 // Must contain key of that location after WEATHER_URL_ROOT,
 // for example: key of Tel Aviv is 215854
 const WEATHER_URL_ROOT = "https://dataservice.accuweather.com/currentconditions/v1/";
@@ -14,7 +14,7 @@ export const getWeather = async cityKey => {
   return data;
 };
 
-// Forecast to 5 next days of specific location
+// Forecast for 5 days in specific location
 // Must contain key of that location after FORECAST_5_DAYS_URL_ROOT,
 // for example: key of Tel Aviv is 215854
 const FORECAST_5_DAYS_URL_ROOT = "https://dataservice.accuweather.com/forecasts/v1/daily/5day/";

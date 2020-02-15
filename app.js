@@ -1,6 +1,6 @@
 import { getWeather, get5DaysForecast, getCityAutocomplete } from "./endpoints.js";
 import { removeChildren, isValidUserInput, toggleDegrees } from "./utils/logical-aid.js";
-import { getFormattedDate, getDayOfTheWeek } from "./utils/visual-design.js";
+import { getFormattedDate, getDayOfTheWeek, showNotice } from "./utils/visual-design.js";
 import { isCityInFavorites, onFavorite} from './utils/storage-state.js';
 
 let currentCityKey = '215854';
@@ -84,12 +84,12 @@ const setCurrentDayWeather = (cityKey, cityName) => {
         weatherDescription: localWeatherData[0].WeatherText
       };
 
-      let weatherCityNameElem = document.getElementById("chosen-city-name");
+      const weatherCityNameElem = document.getElementById("chosen-city-name");
       weatherCityNameElem.innerText = currentDayWeatherData.cityName;
 
-      let toggleFavoritesElem = document.getElementById("favorites-btn");
+      const toggleFavoritesElem = document.getElementById("favorites-btn");
 
-      const cityInFavoritesText = cityKey => {
+      const favoritesBtnText = cityKey => {
         if (isCityInFavorites(cityKey)) {
           toggleFavoritesElem.innerText = "Remove from favorites";
         } else {
@@ -97,15 +97,21 @@ const setCurrentDayWeather = (cityKey, cityName) => {
         }
       };
 
-      cityInFavoritesText(cityKey);
+      const favoritesNotice = cityName => {
+        if (isCityInFavorites(cityKey)) showNotice(`${cityName} has been added to favorites`);
+        else showNotice(`${cityName} has been removed from favorites`);
+      }
+
+      favoritesBtnText(cityKey);
       
-      toggleFavoritesElem.addEventListener("click", (e) => {
+      toggleFavoritesElem.addEventListener("click", e => {
         e.stopImmediatePropagation();
         cityKey = currentCityKey;
         cityName = currentCityName;
         onFavorite({cityKey, cityName});
 
-        cityInFavoritesText(currentCityKey);
+        favoritesBtnText(currentCityKey);
+        favoritesNotice(cityName);
       });
       
 
