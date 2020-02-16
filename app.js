@@ -2,6 +2,7 @@ import { getWeather, get5DaysForecast, getCityAutocomplete } from "./endpoints.j
 import { removeChildren, isValidUserInput, toggleDegrees } from "./utils/logical-aid.js";
 import { getFormattedDate, getDayOfTheWeek, showNotice } from "./utils/visual-design.js";
 import { isCityInFavorites, onFavorite} from './utils/storage-state.js';
+import { Toast } from  './toast/toast.js';
 
 let currentCityKey = '215854';
 let currentCityName = 'Tel Aviv';
@@ -47,8 +48,12 @@ const setLocationAutoComplete = e => {
       }
     })
     .catch(err => {
-      console.log(err);
+      Toast.init()
+      Toast.show(err, 'error')
     });
+
+    
+    
 };
 
 document
@@ -143,7 +148,11 @@ const setCurrentDayWeather = (cityKey, cityName) => {
       currentDayWeatherWrapper.appendChild(toggleDegreesElem);
       currentDayWeatherWrapper.appendChild(weatherDescriptionElem);
     })
-    .catch(err => console.log(err));
+    .catch(err => {
+      Toast.init()
+      Toast.show(err, 'error')
+    });
+    
 };
 
 
@@ -197,7 +206,8 @@ const set5DaysForecast = cityKey => {
         }) 
     })
     .catch(err => {
-      console.log(err);
+      Toast.init()
+      Toast.show(err, 'error')
     });
 }
 
